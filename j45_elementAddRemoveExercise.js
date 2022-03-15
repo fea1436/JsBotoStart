@@ -23,3 +23,23 @@ userData.forEach(item => {
     const parentElement = document.querySelector(".container");
     parentElement.appendChild(element);
 });
+
+const ulElement = document.createElement("ul");
+ulElement.setAttribute("id", "students");
+ulElement.innerHTML = `<b>Students Marks</b>`;
+const parentElement = document.querySelector(".container");
+parentElement.appendChild(ulElement);
+userData.forEach(item => {
+
+    const numbers = item.marks;
+    let result = numbers.reduce((acc, cur) => acc + cur, 0);
+    result = result / numbers.length;
+    
+    const contextString = `<b>${item.name}</b> has average <b>${result}</b>`;
+    
+    const element = document.createElement("li");
+    element.innerHTML = `<i>${contextString}</i>`;
+
+    const parentElement = document.getElementById("students");
+    parentElement.appendChild(element);
+});
