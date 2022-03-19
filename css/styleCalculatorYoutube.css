@@ -1,0 +1,86 @@
+/* Webfont: Helvetica Neue */
+@font-face {
+  font-family: "HelNeue";
+  src: url("./Helvetica Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "HelNeue", Calibri;
+  margin: 25px;
+}
+
+.calculator {
+  background: black;
+  color: white;
+  border-radius: 50px;
+  height: 1218px;
+  padding: 20px;
+  width: 563px;
+  margin: 25px;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+  padding: 0 20px;
+}
+
+.display {
+  font-size: 130px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  height: 158px;
+  margin-right: 20px;
+  text-align: right;
+}
+
+.bottom {
+  width: 200px;
+  height: 5px;
+  background: white;
+  bottom: 10px;
+  border-radius: 4px;
+}
+
+.buttons-container {
+  grid-gap: 20px;
+}
+
+.button {
+  display: flex;
+  background: #333;
+  font-size: 45px;
+  height: 110px;
+  width: 110px;
+}
+
+.button:active,
+.button:focus {
+  filter: brightness(120%);
+}
+
+.numric-0 {
+  width: 250px;
+  border-radius: 55px;
+  padding-left: 43px;
+}
+
+.function {
+  color: black;
+  background: #a5a5a5;
+}
+
+.operator {
+  background: #ffa33c;
+}

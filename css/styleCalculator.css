@@ -1,0 +1,68 @@
+td {
+  border: 30px;
+}
+
+.sevenSegments {
+}
+
+.grayButtons {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  font-family: Calibri;
+  font-size: 3rem;
+  text-align: center;
+  background: #a5a5a5;
+  border-radius: 50%;
+  grid-gap: 20px;
+}
+
+.orangeButtons {
+  width: 100px;
+  height: 100px;
+  font-family: Calibri;
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  background: #fe9505;
+  border-radius: 50%;
+  grid-gap: 20px;
+}
+
+.coalButtons {
+  width: 100px;
+  height: 100px;
+  font-family: Calibri;
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  background: #333333;
+  border-radius: 50%;
+  grid-gap: 20px;
+}
+
+.zeroButtonLeft {
+  width: 100px;
+  height: 100px;
+  font-family: Calibri;
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  background: #333333;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  grid-gap: 20px;
+}
+
+.zeroButtonRight {
+  width: 100px;
+  height: 100px;
+  font-family: Calibri;
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  background: #333333;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  grid-gap: 20px;
+}
