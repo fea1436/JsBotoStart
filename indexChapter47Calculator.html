@@ -1,47 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apple Calculator</title>
-    <link rel="stylesheet" href="./css/styleCalculator.css">
-  </head>
-  <body>
-      <table>
-          <tr>
-              <td class="sevenSegments" colspan="4">0</td>
-          </tr>
-          <tr>
-              <td class="grayButtons">C</td>
-              <td class="grayButtons">+/-</td>
-              <td class="grayButtons">%</td>
-              <td class="orangeButtons">&#247</td>
-          </tr>
-          <tr>
-              <td class="coalButtons">7</td>
-              <td class="coalButtons">8</td>
-              <td class="coalButtons">9</td>
-              <td class="orangeButtons">&#215;</td>
-          </tr>
-          <tr>
-              <td class="coalButtons">4</td>
-              <td class="coalButtons">5</td>
-              <td class="coalButtons">6</td>
-              <td class="orangeButtons">-</td>
-          </tr>
-          <tr>
-              <td class="coalButtons">1</td>
-              <td class="coalButtons">2</td>
-              <td class="coalButtons">3</td>
-              <td class="orangeButtons">+</td>
-          </tr>
-          <tr>
-              <td class="zeroButtonLeft">0</td>
-              <td class="zeroButtonRight"></td>
-              <td class="coalButtons">.</td>
-              <td class="orangeButtons">=</td>
-          </tr>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript Calculator</title>
+  <link rel="stylesheet" href="./css/styleCalculator.css">
+</head>
+
+<body>
+
+  <div class="calc">
+    <div class="display">0</div>
+    <div class="keypad">
+      <table class="keypad-table">
+        <tr>
+          <td>
+            <div class="key all-clear">AC</div>
+          </td>
+          <td>
+            <div class="key clear-last">C</div>
+          </td>
+          <td>
+            <div class="key show-display">%</div>
+          </td>
+          <td>
+            <div class="key show-display">/</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="key show-display">7</div>
+          </td>
+          <td>
+            <div class="key show-display">8</div>
+          </td>
+          <td>
+            <div class="key show-display">9</div>
+          </td>
+          <td>
+            <div class="key show-display">*</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="key show-display">4</div>
+          </td>
+          <td>
+            <div class="key show-display">5</div>
+          </td>
+          <td>
+            <div class="key show-display">6</div>
+          </td>
+          <td>
+            <div class="key show-display">-</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="key show-display">1</div>
+          </td>
+          <td>
+            <div class="key show-display">2</div>
+          </td>
+          <td>
+            <div class="key show-display">3</div>
+          </td>
+          <td>
+            <div class="key show-display">+</div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="key show-display" style="width: 190px">0</div>
+          </td>
+          <td>
+            <div class="key show-display">.</div>
+          </td>
+          <td>
+            <div class="key calculate">=</div>
+          </td>
+        </tr>
       </table>
-  </body>
+    </div>
+  </div>
+  <script src="./j47_Calculator.js"></script>
+</body>
+
 </html>

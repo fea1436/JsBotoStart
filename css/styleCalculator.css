@@ -1,68 +1,52 @@
-td {
-  border: 30px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 30px;
+  font-family: Arial;
 }
-
-.sevenSegments {
+body {
+  background-color: #000000;
 }
-
-.grayButtons {
-  margin: 20px;
-  width: 100px;
-  height: 100px;
-  font-family: Calibri;
-  font-size: 3rem;
+.calc {
+  width: 400px;
+  margin: 100px auto;
+}
+.display {
+  color: #ffffff;
+  text-align: right;
+  font-size: 60px;
+  padding: 20px;
+}
+.keypad {
+}
+.keypad-table {
+}
+.keypad-table tr:first-child .key {
+  background-color: #a5a5a5;
+}
+.keypad-table tr:first-child .key:active {
+  background-color: #f3f0f0;
+}
+.keypad-table tr td:last-child .key {
+  background-color: #ffa45c;
+}
+.keypad-table tr td:last-child .key:active {
+  background-color: #fac9a1cc;
+}
+.key {
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
   text-align: center;
-  background: #a5a5a5;
-  border-radius: 50%;
-  grid-gap: 20px;
+  line-height: 90px;
+  border-radius: 90px;
+  margin: 5px;
+  background-color: #333333;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
 }
-
-.orangeButtons {
-  width: 100px;
-  height: 100px;
-  font-family: Calibri;
-  font-size: 3rem;
-  text-align: center;
-  color: #fff;
-  background: #fe9505;
-  border-radius: 50%;
-  grid-gap: 20px;
-}
-
-.coalButtons {
-  width: 100px;
-  height: 100px;
-  font-family: Calibri;
-  font-size: 3rem;
-  text-align: center;
-  color: #fff;
-  background: #333333;
-  border-radius: 50%;
-  grid-gap: 20px;
-}
-
-.zeroButtonLeft {
-  width: 100px;
-  height: 100px;
-  font-family: Calibri;
-  font-size: 3rem;
-  text-align: center;
-  color: #fff;
-  background: #333333;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-  grid-gap: 20px;
-}
-
-.zeroButtonRight {
-  width: 100px;
-  height: 100px;
-  font-family: Calibri;
-  font-size: 3rem;
-  text-align: center;
-  color: #fff;
-  background: #333333;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  grid-gap: 20px;
+.key:active {
+  background-color: #b4b1b190;
 }
