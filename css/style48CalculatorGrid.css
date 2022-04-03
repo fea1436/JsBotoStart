@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "HelNeue";
+  src: url("./Helvetica Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: auto;
+}
+
+body {
+  text-align: center;
+  background: #000;
+  font-family: HelNeue;
+  display: grid;
+  justify-content: center;
+}
+
+.calculator {
+  width: 800px;
+  display: grid;
+  justify-content: center;
+}
+
+.display {
+  color: #fff;
+  height: 12rem;
+  width: 380px;
+  line-height: 13rem;
+  font-size: 5rem;
+  text-align: right;
+}
+
+.keypad {
+  height: 24rem;
+  width: 400px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.key {
+  color: #fff;
+  height: 90px;
+  width: 90px;
+  background: #333;
+  font-size: 2.5rem;
+  line-height: 6rem;
+  border-radius: 50%;
+}
+
+#zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}

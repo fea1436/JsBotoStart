@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 4em auto 300px 3rem 2rem;
+  font-size: 2rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+#letters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#letters div {
+  background: gainsboro;
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid green;
+  line-height: 3.5rem;
+  margin: 5px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#letters div:hover {
+  background: palegreen;
+  cursor: pointer;
+}
+
+#letters div.used {
+  background-color: lightgray;
+  opacity: 0.5;
+  cursor: default;
+}
+
+#hangImage {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#clueParagraph p {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 2rem;
+}
+
+#gameOver p {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  display: none;
+}
