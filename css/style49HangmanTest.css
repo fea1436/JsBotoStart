@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* display: grid;
+    grid-template-rows: 6em auto 300px 6rem 2rem; */
+}
+
+#letters {
+    display: flex;
+}
+
+#letters div {
+    background: gainsboro;
+    height: 2em;
+    width: 2em;
+    border: 1px solid green;
+    line-height: 2em;
+    margin: 5px;
+    text-align: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#letters div:hover {
+    background: palegreen;
+}
