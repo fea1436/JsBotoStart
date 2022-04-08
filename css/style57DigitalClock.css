@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "HelNeue";
+    src: url("./Helvetica Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    font-display: auto;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "HelNeue";
+}
+
+body {
+    background: #000;
+}
+
+#clock {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #17D4FE;
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
