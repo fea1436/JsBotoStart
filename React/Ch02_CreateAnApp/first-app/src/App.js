@@ -1,7 +1,4 @@
 import React, {Component} from "react";
-import Hi from "./Hi";
-import Salam from "./Salam";
-
 
 class App extends Component {
     render() {
@@ -22,3 +19,4 @@ class App extends Component {
 }
 
 export default App;
+
